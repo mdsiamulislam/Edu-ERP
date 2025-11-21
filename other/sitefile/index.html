@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নূর আল-ইসলাম মাদরাসা | আমাদের মাদরাসা - জ্ঞান ও নৈতিকতার ঠিকানা</title>
+    
+    <!-- Google Fonts - Bangla Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Library for Scroll Animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <style>
+        * {
+            font-family: 'Noto Sans Bengali', 'Poppins', sans-serif;
+        }
+        :root {
+            --primary: #1a5f3b;
+            --secondary: #d4af37;
+            --light: #f8f9fa;
+            --dark: #1a1a2e;
+        }
+        body { scroll-behavior: smooth; }
+        header { position: sticky; top: 0; z-index: 1000; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease; }
+        .hero { background: linear-gradient(135deg, rgba(26,95,59,0.85), rgba(26,95,59,0.75)), url('https://source.unsplash.com/1600x900/?mosque,students'); background-size: cover; background-position: center; min-height: 600px; display: flex; align-items: center; justify-content: center; color: white; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(212,175,55,0.1) 0%, transparent 70%); border-radius: 50%; animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%,100%{transform:translateY(0px);} 50%{transform:translateY(-20px);} }
+        .hero-content { position: relative; z-index:10; text-align:center; animation: slideUp 0.8s ease; }
+        @keyframes slideUp { from{opacity:0;transform:translateY(30px);} to{opacity:1;transform:translateY(0);} }
+        .btn { transition: all 0.3s ease; position: relative; overflow: hidden; }
+        .btn::before { content: ''; position:absolute; top:0; left:-100%; width:100%; height:100%; background: rgba(255,255,255,0.1); transition: left 0.3s ease; }
+        .btn:hover::before { left:100%; }
+        .btn-primary { background: var(--secondary); color: var(--primary); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(212,175,55,0.3); }
+        .feature-card { transition: all 0.3s ease; background:white; border-radius:12px; padding:30px; text-align:center; border-left:4px solid var(--secondary); }
+        .feature-card:hover { transform:translateY(-10px); box-shadow:0 15px 40px rgba(0,0,0,0.1); }
+        .feature-icon { width:60px;height:60px; background:linear-gradient(135deg,var(--primary),var(--secondary)); border-radius:12px; display:flex; align-items:center; justify-content:center; color:white; font-size:30px; margin:0 auto 15px; }
+        .course-card { background:white; border-radius:12px; overflow:hidden; transition:all 0.3s ease; box-shadow:0 5px 20px rgba(0,0,0,0.08); border-top:4px solid var(--primary); }
+        .course-card:hover { transform:translateY(-8px); box-shadow:0 15px 40px rgba(0,0,0,0.15); }
+        .course-image { width:100%; height:200px; background:linear-gradient(135deg,var(--primary),var(--secondary)); display:flex; align-items:center; justify-content:center; color:white; font-size:50px; }
+        .gallery-grid { display:grid; gap:15px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
+        .gallery-item { position:relative; overflow:hidden; border-radius:12px; height:250px; cursor:pointer; }
+        .gallery-item::before { content:''; position:absolute; top:0; left:0; right:0; bottom:0; background:linear-gradient(135deg, rgba(26,95,59,0.7), rgba(212,175,55,0.7)); opacity:0; transition:opacity 0.3s ease; z-index:2; }
+        .gallery-item:hover::before { opacity:1; }
+        .gallery-item img { width:100%; height:100%; object-fit:cover; transition:transform 0.3s ease; }
+        .gallery-item:hover img { transform:scale(1.1); }
+        .section-heading { text-align:center; margin-bottom:50px; }
+        .section-heading h2 { font-size:2.5rem; color:var(--dark); margin-bottom:10px; font-weight:700; }
+        .section-heading::after { content:''; display:block; width:60px; height:4px; background:var(--secondary); margin:20px auto 0; border-radius:2px; }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white">
+        <nav class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-gradient-to-br from-green-600 to-amber-500 rounded-lg flex items-center justify-center text-white text-xl font-bold">ن</div>
+                <div>
+                    <h1 class="text-xl font-bold text-green-700">নূর আল-ইসলাম</h1>
+                    <p class="text-xs text-gray-600">মাদরাসা</p>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-green-600 font-medium transition">হোম</a>
+                <a href="#courses" class="text-gray-700 hover:text-green-600 font-medium transition">কোর্স</a>
+                <a href="#gallery" class="text-gray-700 hover:text-green-600 font-medium transition">গ্যালারি</a>
+                <a href="#about" class="text-gray-700 hover:text-green-600 font-medium transition">সম্পর্কে</a>
+                <a href="#contact" class="text-gray-700 hover:text-green-600 font-medium transition">যোগাযোগ</a>
+            </div>
+            <button class="btn btn-primary px-6 py-2 rounded-lg font-semibold text-sm hidden md:block">যোগ দিন</button>
+            <button class="md:hidden text-gray-700 text-2xl" onclick="toggleMenu()">☰</button>
+        </nav>
+        <div id="mobileMenu" class="hidden md:hidden bg-gray-50 px-4 py-4 space-y-3">
+            <a href="#home" class="block text-gray-700 hover:text-green-600 font-medium">হোম</a>
+            <a href="#courses" class="block text-gray-700 hover:text-green-600 font-medium">কোর্স</a>
+            <a href="#gallery" class="block text-gray-700 hover:text-green-600 font-medium">গ্যালারি</a>
+            <a href="#about" class="block text-gray-700 hover:text-green-600 font-medium">সম্পর্কে</a>
+            <a href="#contact" class="block text-gray-700 hover:text-green-600 font-medium">যোগাযোগ</a>
+            <button class="btn btn-primary w-full px-6 py-2 rounded-lg font-semibold">যোগ দিন</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="text-5xl md:text-6xl font-bold mb-4" data-aos="fade-up">আমাদের মাদরাসা</h2>
+            <p class="text-2xl md:text-3xl mb-8 text-amber-100" data-aos="fade-up" data-aos-delay="100">জ্ঞান ও নৈতিকতার ঠিকানা</p>
+            <p class="text-lg mb-10 max-w-2xl mx-auto text-gray-100" data-aos="fade-up" data-aos-delay="200">আমরা আধুনিক শিক্ষা পদ্ধতির সাথে ইসলামিক মূল্যবোধ একত্রিত করে ভবিষ্যত প্রজন্মকে গড়ে তুলছি।</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="300">
+                <button class="btn btn-primary px-8 py-3 rounded-lg font-bold text-lg">কোর্স দেখুন</button>
+                <button class="btn px-8 py-3 rounded-lg font-bold text-lg border-2 border-white text-white hover:bg-white hover:text-green-700 transition">আরও জানুন</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="section-heading" data-aos="fade-up"><h2>আমাদের শক্তিশালী বৈশিষ্ট্য</h2></div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">অভিজ্ঞ শিক্ষক</h3>
+                    <p class="text-gray-600">আমাদের শিক্ষকরা ইসলামিক জ্ঞান এবং আধুনিক শিক্ষাবিজ্ঞানে বিশেষজ্ঞ।</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">📚</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">আধুনিক পাঠ্যক্রম</h3>
+                    <p class="text-gray-600">ঐতিহ্য এবং আধুনিকতার নিখুঁত সমন্বয়ে তৈরি আমাদের পাঠ্যক্রম।</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">🎓</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">শিক্ষার্থী-কেন্দ্রিক</h3>
+                    <p class="text-gray-600">প্রতিটি শিক্ষার্থীর ব্যক্তিগত উন্নয়নে আমরা প্রতিশ্রুতিবদ্ধ।</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">🤝</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">সামাজিক সেবা</h3>
+                    <p class="text-gray-600">সমাজের উন্নয়নে অবদান রাখা আমাদের মূল লক্ষ্য।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-16 md:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="section-heading" data-aos="fade-up"><h2>আমাদের কোর্স সমূহ</h2></div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="course-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="course-image">📖</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">কুরআন মেমোরাইজেশন</h3>
+                        <p class="text-gray-600 mb-4">সম্পূর্ণ কুরআন শরীফ হিফজ করার জন্য বিশেষায়িত প্রোগ্রাম।</p>
+                        <button class="text-green-600 font-semibold hover:text-amber-500 transition">আরও জানুন →</button>
+                    </div>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-image">🕌</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">হাদিস অধ্যয়ন</h3>
+                        <p class="text-gray-600 mb-4">নবী করিম (সঃ)-এর সুন্নত এবং হাদিস সম্পর্কে গভীর জ্ঞান।</p>
+                        <button class="text-green-600 font-semibold hover:text-amber-500 transition">আরও জানুন →</button>
+                    </div>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-image">✍️</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">আরবি ভাষা</h3>
+                        <p class="text-gray-600 mb-4">আরবি ভাষা শেখার জন্য প্রাথমিক থেকে উন্নত স্তর পর্যন্ত কোর্স।</p>
+                        <button class="text-green-600 font-semibold hover:text-amber-500 transition">আরও জানুন →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="section-heading" data-aos="fade-up"><h2>আমাদের গ্যালারি</h2></div>
+            <div class="gallery-grid">
+                <img src="https://source.unsplash.com/400x300/?mosque,classroom" alt="Classroom" class="gallery-item" data-aos="zoom-in" />
+                <img src="https://source.unsplash.com/400x300/?students,learning" alt="Students" class="gallery-item" data-aos="zoom-in" />
+                <img src="https://source.unsplash.com/400x300/?mosque,event" alt="Event" class="gallery-item" data-aos="zoom-in" />
+                <img src="https://source.unsplash.com/400x300/?library" alt="Library" class="gallery-item" data-aos="zoom-in" />
+                <img src="https://source.unsplash.com/400x300/?campus" alt="Campus" class="gallery-item" data-aos="zoom-in" />
+                <img src="https://source.unsplash.com/400x300/?students,mosque" alt="Students" class="gallery-item" data-aos="zoom-in" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-700 text-white py-10 mt-10">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+            <div>
+                <h3 class="font-bold text-lg mb-3">নূর আল-ইসলাম মাদরাসা</h3>
+                <p>আমাদের মাদরাসা জ্ঞান, নৈতিকতা ও সমাজসেবার জন্য প্রতিশ্রুতিবদ্ধ।</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg mb-3">যোগাযোগ</h3>
+                <p>ফোন: +880 1234 567890</p>
+                <p>ইমেইল: info@nooralislam.com</p>
+                <p>ঠিকানা: ঢাকা, বাংলাদেশ</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg mb-3">সোশ্যাল মিডিয়া</h3>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#" class="hover:text-amber-500">Facebook</a>
+                    <a href="#" class="hover:text-amber-500">Instagram</a>
+                    <a href="#" class="hover:text-amber-500">YouTube</a>
+                </div>
+            </div>
+        </div>
+        <p class="text-center mt-6 text-sm">© 2025 নূর আল-ইসলাম মাদরাসা. সব অধিকার সংরক্ষিত।</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
+

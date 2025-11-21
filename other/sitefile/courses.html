@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>কোর্সসমূহ | নূর আল-ইসলাম মাদরাসা</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<style>
+*{font-family:'Noto Sans Bengali',sans-serif;}
+:root{--primary:#1a5f3b;--secondary:#d4af37;}
+body{scroll-behavior:smooth;background:#f8fafc;}
+.course-card{background:white;border-radius:12px;overflow:hidden;transition:all 0.3s ease;box-shadow:0 5px 20px rgba(0,0,0,0.08);border-top:4px solid var(--primary);}
+.course-card:hover{transform:translateY(-8px);box-shadow:0 15px 40px rgba(0,0,0,0.15);}
+.course-image{width:100%;height:200px;background:linear-gradient(135deg,var(--primary),var(--secondary));display:flex;align-items:center;justify-content:center;color:white;font-size:50px;}
+.section-heading{text-align:center;margin-bottom:50px;}
+.section-heading h2{font-size:2.5rem;color:var(--primary);margin-bottom:10px;font-weight:700;}
+.section-heading::after{content:'';display:block;width:60px;height:4px;background:var(--secondary);margin:20px auto 0;border-radius:2px;}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-white shadow sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <h1 class="text-xl font-bold text-green-700">নূর আল-ইসলাম</h1>
+        <div class="space-x-4">
+            <a href="index.html" class="font-semibold text-gray-700 hover:text-green-600">হোম</a>
+            <a href="courses.html" class="font-semibold text-gray-700 hover:text-green-600">কোর্স</a>
+            <a href="gallery.html" class="font-semibold text-gray-700 hover:text-green-600">গ্যালারি</a>
+            <a href="about.html" class="font-semibold text-gray-700 hover:text-green-600">সম্পর্কে</a>
+            <a href="contact.html" class="font-semibold text-gray-700 hover:text-green-600">যোগাযোগ</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Courses Section -->
+<section class="py-16 md:py-24">
+<div class="max-w-7xl mx-auto px-4">
+    <div class="section-heading" data-aos="fade-up"><h2>আমাদের কোর্সসমূহ</h2></div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Course 1 -->
+        <div class="course-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="course-image">📖</div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">কুরআন মেমোরাইজেশন (হিফজ)</h3>
+                <p class="text-gray-600 mb-4">
+                    সম্পূর্ণ কুরআন শরীফ হিফজ করার জন্য বিশেষায়িত প্রোগ্রাম। শিক্ষার্থীরা ধাপে ধাপে আয়াত মুখস্থ করে, 
+                    এবং নিয়মিত পরীক্ষার মাধ্যমে তাদের হিফজ উন্নয়ন মাপা হয়।
+                </p>
+            </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="course-image">🕌</div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">হাদিস অধ্যয়ন</h3>
+                <p class="text-gray-600 mb-4">
+                    নবী করিম (সঃ)-এর সুন্নত ও হাদিস সম্পর্কে গভীর জ্ঞান প্রদান করা হয়। 
+                    শিক্ষার্থীরা সঠিক হাদিস চয়ন ও ব্যাখ্যা শেখে। 
+                </p>
+            </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="course-image">✍️</div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">আরবি ভাষা</h3>
+                <p class="text-gray-600 mb-4">
+                    আরবি ভাষা শেখার জন্য প্রাথমিক থেকে উন্নত স্তর পর্যন্ত কোর্স। 
+                    শিক্ষার্থীরা পড়া, লেখা, বাক্য গঠন ও কথোপকথনে দক্ষতা অর্জন করে।
+                </p>
+            </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="course-image">⚖️</div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">ফিকাহ শিক্ষা</h3>
+                <p class="text-gray-600 mb-4">
+                    ইসলামের আইন ও নীতিশাস্ত্রের উপর বিস্তারিত শিক্ষা। 
+                    শিক্ষার্থীরা দৈনন্দিন জীবন ও সমাজের নৈতিক সিদ্ধান্ত গ্রহণে সক্ষম হয়।
+                </p>
+            </div>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="course-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="course-image">🧮</div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">আধুনিক বিষয়</h3>
+                <p class="text-gray-600 mb-4">
+                    বিজ্ঞান, গণিত, ইংরেজি এবং কম্পিউটার শিক্ষার মাধ্যমে শিক্ষার্থীদের আধুনিক শিক্ষার সাথে পরিচয় করানো হয়। 
+                </p>
+            </div>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="course-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="course-image">👶</div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">শিশু শিক্ষা কর্মসূচি</h3>
+                <p class="text-gray-600 mb-4">
+                    নার্সারি ও প্রাথমিক কোর্স যা ছোট শিশুদের নৈতিক ও শৈশব শিক্ষা নিশ্চিত করে। 
+                    গল্প, গান, এবং খেলাধুলার মাধ্যমে শেখানো হয়।
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<footer class="bg-green-700 text-white py-10 mt-10 text-center">
+    © 2025 নূর আল-ইসলাম মাদরাসা. সব অধিকার সংরক্ষিত।
+</footer>
+
+<script>
+AOS.init({duration:1000,once:true});
+</script>
+
+</body>
+</html>
+
