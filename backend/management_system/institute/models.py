@@ -9,8 +9,8 @@ class InstituteInfo(models.Model):
     type = models.CharField(max_length=100)
     address = models.TextField()
     phone = models.CharField(max_length=20)
-    email = models.EmailField()
-    logo = models.ImageField(upload_to='institute_logos/')
+    email = models.EmailField(null=True, blank=True)
+    logo = models.ImageField(upload_to='institute_logos/', null=True, blank=True)
     established_date = models.DateField()
     is_active = models.BooleanField(default=True)
 
