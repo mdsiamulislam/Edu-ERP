@@ -16,7 +16,6 @@ class Admission(models.Model):
 
     # Getting the class from institute models
     applied_class = models.ForeignKey(Class, on_delete=models.CASCADE)
-    academic_year = models.ForeignKey(AcademicConfig, on_delete=models.CASCADE)
     is_approved = models.BooleanField(default=False)
     registration_number = models.IntegerField(auto_created=True, unique=True, null=True, blank=True)
 

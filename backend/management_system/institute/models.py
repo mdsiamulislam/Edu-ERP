@@ -34,6 +34,7 @@ class AcademicConfig(models.Model):
 # Class Models
 class Class(models.Model):
     name = models.CharField(max_length=100)
+    academic_config = models.ForeignKey(AcademicConfig, on_delete=models.CASCADE)
     is_active = models.BooleanField(default=True)
 
 
